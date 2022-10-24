@@ -1,0 +1,56 @@
+10/24
+
+-- WEB Application (Django Framework(웹서버 내장) - python)
+---> 브라우저라는 도구를 활용한 프로그램
+
+?MVC
+?프레임워크(구조물) - Model View Template
+
+WEB - 풀 브라우징 방식(화면의 분기와 렌더링 발생!!)
+(client)                                    (server)
+                     request
+                 http://~~~~~
+Browser -----------------------> Django Framework
+           <----------------------
+                     response
+
+
+
+---------------------- xxxxx.html
+구조(html)
+표현(css)
+동작(javascript)
+
+# Django - (MVT) - server 설치 완료
+> django-admin startproject djangoWEB
+
+> cd djangoWEB
+서버 실행 명령어 manage.py 있는 디렉토리에서 
+>python manage.py runserver
+
+M
+View - 로직 처리를 담당하는 역할
+Templates - UI(.html)
+http://127.0.0.1:8000/write ----> urls.py ----> view(함수 정의)
+http://127.0.0.1:8000/insert
+http://127.0.0.1:8000/update
+http://127.0.0.1:8000/delete
+
+-- CRUD
+
+WEB
+-- bbsApp
+-- userApp
+-- noticeApp
+-- exampleApp
+
+앱을 만들면 반드시 웹의 settings.py - INSTALLED_APPS 에 등록
+> python manage.py startapp exampleApp
+
+
+
+
+
+
+
+
